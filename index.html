@@ -11,12 +11,11 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
         <div class="logo-img-wrap">
-          <img src="images/logo.png" alt="Iron Tribe Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <img src="images/logo.png" alt="Iron Tribe Logo" class="logo-img" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
           <div class="logo-placeholder" style="display:none">
             <span class="logo-icon">⚡</span>
           </div>
@@ -39,10 +38,9 @@
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="images/hero.jpg" alt="Iron Tribe Gym" class="hero-bg-img" onerror="this.style.display='none'" />
+      <img src="images/hero.jpg" alt="Iron Tribe Gym" class="hero-bg-img" loading="lazy" decoding="async" onerror="this.style.display='none'" />
       <div class="hero-overlay"></div>
       <div class="hero-noise"></div>
     </div>
@@ -71,14 +69,13 @@
     </a>
   </section>
 
-  <!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
   <section class="about section" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-visual reveal-left">
           <div class="about-img-stack">
             <div class="about-img-main">
-              <img src="images/gym1.jpg" alt="Iron Tribe Interior" onerror="this.style.background='#111';this.style.display='flex'" />
+              <img src="images/gym1.jpg" alt="Iron Tribe Interior" loading="lazy" decoding="async" onerror="this.style.background='#111';this.style.display='flex'" />
               <div class="img-placeholder">🏋️</div>
             </div>
             <div class="about-img-badge">
@@ -128,7 +125,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ PLANS ═══════════════════════════════════════ -->
   <section class="plans section" id="plans">
     <div class="container">
       <div class="section-header reveal-up">
@@ -198,7 +194,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ FACILITIES ═══════════════════════════════════════ -->
   <section class="facilities section" id="facilities">
     <div class="container">
       <div class="section-header reveal-up">
@@ -210,7 +205,7 @@
 
         <div class="facility-card facility-large reveal-left">
           <div class="facility-img">
-            <img src="images/gym2.jpg" alt="Premium Equipment" onerror="this.style.display='none'" />
+            <img src="images/gym2.jpg" alt="Premium Equipment" loading="lazy" onerror="this.style.display='none'" />
             <div class="facility-img-placeholder">🏋️‍♂️</div>
           </div>
           <div class="facility-content">
@@ -222,7 +217,7 @@
 
         <div class="facility-card reveal-right delay-1">
           <div class="facility-img small">
-            <img src="images/gym3.jpg" alt="Clean Washrooms" onerror="this.style.display='none'" />
+            <img src="images/gym3.jpg" alt="Clean Washrooms" loading="lazy" onerror="this.style.display='none'" />
             <div class="facility-img-placeholder">🚿</div>
           </div>
           <div class="facility-content">
@@ -234,7 +229,7 @@
 
         <div class="facility-card reveal-right delay-2">
           <div class="facility-img small">
-            <img src="images/gym4.jpg" alt="Spacious Workout Area" onerror="this.style.display='none'" />
+            <img src="images/gym4.jpg" alt="Spacious Workout Area" loading="lazy" onerror="this.style.display='none'" />
             <div class="facility-img-placeholder">🏟️</div>
           </div>
           <div class="facility-content">
@@ -246,7 +241,7 @@
 
         <div class="facility-card facility-wide reveal-up delay-3">
           <div class="facility-img wide">
-            <img src="images/gym5.jpg" alt="Expert Coaching" onerror="this.style.display='none'" />
+            <img src="images/gym5.jpg" alt="Expert Coaching" loading="lazy" onerror="this.style.display='none'" />
             <div class="facility-img-placeholder">🎯</div>
           </div>
           <div class="facility-content">
@@ -260,7 +255,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ GALLERY ═══════════════════════════════════════ -->
   <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section-header reveal-up">
@@ -270,24 +264,22 @@
     </div>
     <div class="gallery-track" id="galleryTrack">
       <div class="gallery-reel" id="galleryReel">
-        <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏋️</div></div>
-        <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">💪</div></div>
-        <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🔥</div></div>
-        <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">⚡</div></div>
-        <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏆</div></div>
-        <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🎯</div></div>
-        <!-- duplicated for infinite loop -->
-        <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏋️</div></div>
-        <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">💪</div></div>
-        <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🔥</div></div>
-        <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">⚡</div></div>
-        <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏆</div></div>
-        <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🎯</div></div>
+        <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏋️</div></div>
+        <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">💪</div></div>
+        <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🔥</div></div>
+        <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">⚡</div></div>
+        <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏆</div></div>
+        <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🎯</div></div>
+        <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏋️</div></div>
+        <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">💪</div></div>
+        <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🔥</div></div>
+        <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">⚡</div></div>
+        <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🏆</div></div>
+        <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" loading="lazy" onerror="this.parentElement.classList.add('img-error')" /><div class="gallery-placeholder">🎯</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ TESTIMONIALS ═══════════════════════════════════════ -->
   <section class="testimonials section" id="testimonials">
     <div class="container">
       <div class="section-header reveal-up">
@@ -340,7 +332,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header reveal-up">
@@ -394,7 +385,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
